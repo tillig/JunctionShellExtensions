@@ -1,0 +1,36 @@
+// JunctionIconTooltip.idl : IDL source for JunctionIconTooltip
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JunctionIconTooltip.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(865757CF-D094-4A14-819F-EAB0CB4757D3),
+	dual,
+	nonextensible,
+	helpstring("IJunctionTooltipShlExt Interface"),
+	pointer_default(unique)
+]
+interface IJunctionTooltipShlExt : IDispatch{
+};
+[
+	uuid(5EEC7636-E9C5-4F0F-888D-4EF407C85290),
+	version(1.0),
+	helpstring("JunctionIconTooltip 1.0 Type Library")
+]
+library JunctionIconTooltipLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(088C74CA-76D2-4C1F-A411-D13736875597),
+		helpstring("JunctionTooltipShlExt Class")
+	]
+	coclass JunctionTooltipShlExt
+	{
+		[default] interface IJunctionTooltipShlExt;
+	};
+};

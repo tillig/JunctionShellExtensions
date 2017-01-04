@@ -1,0 +1,27 @@
+HKCR
+{
+	JunctionIconTooltip.JunctionTooltipSh.1 = s 'JunctionTooltipShlExt Class'
+	{
+		CLSID = s '{088C74CA-76D2-4C1F-A411-D13736875597}'
+	}
+	JunctionIconTooltip.JunctionTooltipShlE = s 'JunctionTooltipShlExt Class'
+	{
+		CLSID = s '{088C74CA-76D2-4C1F-A411-D13736875597}'
+		CurVer = s 'JunctionIconTooltip.JunctionTooltipSh.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {088C74CA-76D2-4C1F-A411-D13736875597} = s 'JunctionTooltipShlExt Class'
+		{
+			ProgID = s 'JunctionIconTooltip.JunctionTooltipSh.1'
+			VersionIndependentProgID = s 'JunctionIconTooltip.JunctionTooltipShlE'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{5EEC7636-E9C5-4F0F-888D-4EF407C85290}'
+		}
+	}
+}

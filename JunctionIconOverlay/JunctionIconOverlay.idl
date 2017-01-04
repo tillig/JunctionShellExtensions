@@ -1,0 +1,36 @@
+// JunctionIconOverlay.idl : IDL source for JunctionIconOverlay
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JunctionIconOverlay.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(78D0E57F-E29A-46B9-BB04-283EB8B4351F),
+	dual,
+	nonextensible,
+	helpstring("IJunctionIcon Interface"),
+	pointer_default(unique)
+]
+interface IJunctionIcon : IDispatch{
+};
+[
+	uuid(E77E12E3-01B7-4EAB-B176-6BA9D1EE01A4),
+	version(1.0),
+	helpstring("JunctionIconOverlay 1.0 Type Library")
+]
+library JunctionIconOverlayLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DF387345-CB80-4D52-837A-485537817A6D),
+		helpstring("JunctionIcon Class")
+	]
+	coclass JunctionIcon
+	{
+		[default] interface IJunctionIcon;
+	};
+};

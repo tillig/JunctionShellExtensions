@@ -1,0 +1,36 @@
+// JunctionPropertySheet.idl : IDL source for JunctionPropertySheet
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JunctionPropertySheet.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7FFC2BC8-879B-4B5D-A91B-BAAED45E2D4F),
+	dual,
+	nonextensible,
+	helpstring("IJunctionPropertySheetShlExt Interface"),
+	pointer_default(unique)
+]
+interface IJunctionPropertySheetShlExt : IDispatch{
+};
+[
+	uuid(8E7FBB15-5072-4395-A183-E58AAFC45334),
+	version(1.0),
+	helpstring("JunctionPropertySheet 1.0 Type Library")
+]
+library JunctionPropertySheetLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(9C103B4A-6198-4156-B8C2-4BCF68159013),
+		helpstring("JunctionPropertySheetShlExt Class")
+	]
+	coclass JunctionPropertySheetShlExt
+	{
+		[default] interface IJunctionPropertySheetShlExt;
+	};
+};

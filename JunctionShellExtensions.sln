@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JunctionIconOverlay", "JunctionIconOverlay\JunctionIconOverlay.vcproj", "{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JunctionIconOverlayPS", "JunctionIconOverlay\JunctionIconOverlayPS.vcproj", "{A42C2889-F8F5-4EF1-A398-0C0221B05042}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34} = {E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "JunctionShellExtensionsSetup", "JunctionShellExtensionsSetup\JunctionIconOverlaySetup.vdproj", "{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JunctionPropertySheet", "JunctionPropertySheet\JunctionPropertySheet.vcproj", "{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JunctionPropertySheetPS", "JunctionPropertySheet\JunctionPropertySheetPS.vcproj", "{2309BAFC-E5D1-4549-B660-5C97A61F17CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6} = {FFF41E7F-7A99-4AF9-988F-8230AED26BD6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Deploy = Deploy
+		Release = Release
+		ReleaseUC = ReleaseUC
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Debug.ActiveCfg = Debug|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Debug.Build.0 = Debug|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Deploy.ActiveCfg = Release|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Deploy.Build.0 = Release|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Release.ActiveCfg = Release|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.Release.Build.0 = Release|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.ReleaseUC.ActiveCfg = Release|Win32
+		{E801E80D-8BE8-49A2-B3DF-5AD88B7D2D34}.ReleaseUC.Build.0 = Release|Win32
+		{A42C2889-F8F5-4EF1-A398-0C0221B05042}.Debug.ActiveCfg = Debug|Win32
+		{A42C2889-F8F5-4EF1-A398-0C0221B05042}.Deploy.ActiveCfg = Release|Win32
+		{A42C2889-F8F5-4EF1-A398-0C0221B05042}.Release.ActiveCfg = Release|Win32
+		{A42C2889-F8F5-4EF1-A398-0C0221B05042}.ReleaseUC.ActiveCfg = Release|Win32
+		{A42C2889-F8F5-4EF1-A398-0C0221B05042}.ReleaseUC.Build.0 = Release|Win32
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.Debug.ActiveCfg = Debug
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.Deploy.ActiveCfg = Release
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.Deploy.Build.0 = Release
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.Release.ActiveCfg = Release
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.ReleaseUC.ActiveCfg = Release
+		{26BE6510-73BE-4B9C-87E6-A47BE2B9A80C}.ReleaseUC.Build.0 = Release
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Debug.ActiveCfg = Debug|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Debug.Build.0 = Debug|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Deploy.ActiveCfg = Release|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Deploy.Build.0 = Release|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Release.ActiveCfg = Release|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.Release.Build.0 = Release|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.ReleaseUC.ActiveCfg = Release|Win32
+		{FFF41E7F-7A99-4AF9-988F-8230AED26BD6}.ReleaseUC.Build.0 = Release|Win32
+		{2309BAFC-E5D1-4549-B660-5C97A61F17CB}.Debug.ActiveCfg = Debug|Win32
+		{2309BAFC-E5D1-4549-B660-5C97A61F17CB}.Deploy.ActiveCfg = Release|Win32
+		{2309BAFC-E5D1-4549-B660-5C97A61F17CB}.Release.ActiveCfg = Release|Win32
+		{2309BAFC-E5D1-4549-B660-5C97A61F17CB}.ReleaseUC.ActiveCfg = Release|Win32
+		{2309BAFC-E5D1-4549-B660-5C97A61F17CB}.ReleaseUC.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

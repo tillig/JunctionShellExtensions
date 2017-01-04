@@ -1,0 +1,57 @@
+HKCR
+{
+	JunctionPropertySheet.JunctionPropert.1 = s 'JunctionPropertySheetShlExt Class'
+	{
+		CLSID = s '{9C103B4A-6198-4156-B8C2-4BCF68159013}'
+	}
+	JunctionPropertySheet.JunctionPropertyS = s 'JunctionPropertySheetShlExt Class'
+	{
+		CLSID = s '{9C103B4A-6198-4156-B8C2-4BCF68159013}'
+		CurVer = s 'JunctionPropertySheet.JunctionPropert.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9C103B4A-6198-4156-B8C2-4BCF68159013} = s 'JunctionPropertySheetShlExt Class'
+		{
+			ProgID = s 'JunctionPropertySheet.JunctionPropert.1'
+			VersionIndependentProgID = s 'JunctionPropertySheet.JunctionPropertyS'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{8E7FBB15-5072-4395-A183-E58AAFC45334}'
+		}
+	}
+	NoRemove *
+	{
+		NoRemove shellex
+		{
+			NoRemove PropertySheetHandlers
+			{
+				ForceRemove {9C103B4A-6198-4156-B8C2-4BCF68159013}
+			}
+		}
+	}
+	NoRemove Directory
+	{
+		NoRemove shellex
+		{
+			NoRemove PropertySheetHandlers
+			{
+				ForceRemove {9C103B4A-6198-4156-B8C2-4BCF68159013}
+			}
+		}
+	}
+	NoRemove Folder
+	{
+		NoRemove shellex
+		{
+			NoRemove PropertySheetHandlers
+			{
+				ForceRemove {9C103B4A-6198-4156-B8C2-4BCF68159013}
+			}
+		}
+	}
+}

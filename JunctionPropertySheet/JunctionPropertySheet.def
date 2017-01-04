@@ -1,0 +1,9 @@
+; JunctionPropertySheet.def : Declares the module parameters.
+
+LIBRARY      "JunctionPropertySheet.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

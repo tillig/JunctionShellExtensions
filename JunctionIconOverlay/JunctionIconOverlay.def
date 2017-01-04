@@ -1,0 +1,9 @@
+; JunctionIconOverlay.def : Declares the module parameters.
+
+LIBRARY      "JunctionIconOverlay.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
